@@ -183,10 +183,17 @@
         .hero-image {
             min-height: 420px;
             border-radius: 25px;
-            background:
-                linear-gradient(rgba(20,50,30,0.08), rgba(20,50,30,0.08)),
-                url("https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=1000&q=85")
-                center / cover;
+            background: linear-gradient(135deg, #f0f8f7 0%, #e8f4f1 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-image svg {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
         }
 
         .advantages {
@@ -703,7 +710,95 @@
 
         </div>
 
-        <div class="hero-image"></div>
+        <div class="hero-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                <!-- Фон книжной полки -->
+                <rect x="20" y="180" width="360" height="280" rx="10" fill="#e0f7f4" opacity="0.5"/>
+                
+                <!-- Книжные полки -->
+                <line x1="30" y1="220" x2="370" y2="220" stroke="#00a878" stroke-width="2"/>
+                <line x1="30" y1="280" x2="370" y2="280" stroke="#00a878" stroke-width="2"/>
+                <line x1="30" y1="340" x2="370" y2="340" stroke="#00a878" stroke-width="2"/>
+                <line x1="30" y1="400" x2="370" y2="400" stroke="#00a878" stroke-width="2"/>
+                
+                <!-- Книги на первой полке -->
+                <rect x="40" y="200" width="25" height="35" fill="#e74c3c" rx="2"/>
+                <rect x="70" y="200" width="22" height="35" fill="#3498db" rx="2"/>
+                <rect x="97" y="200" width="28" height="35" fill="#f39c12" rx="2"/>
+                <rect x="130" y="200" width="20" height="35" fill="#9b59b6" rx="2"/>
+                <rect x="155" y="200" width="25" height="35" fill="#1abc9c" rx="2"/>
+                <rect x="185" y="200" width="24" height="35" fill="#e74c3c" rx="2"/>
+                <rect x="214" y="200" width="26" height="35" fill="#2ecc71" rx="2"/>
+                <rect x="245" y="200" width="23" height="35" fill="#3498db" rx="2"/>
+                <rect x="273" y="200" width="25" height="35" fill="#f39c12" rx="2"/>
+                <rect x="303" y="200" width="27" height="35" fill="#e67e22" rx="2"/>
+                <rect x="335" y="200" width="20" height="35" fill="#9b59b6" rx="2"/>
+                
+                <!-- Книги на второй полке -->
+                <rect x="40" y="260" width="24" height="35" fill="#3498db" rx="2"/>
+                <rect x="69" y="260" width="26" height="35" fill="#2ecc71" rx="2"/>
+                <rect x="100" y="260" width="22" height="35" fill="#e74c3c" rx="2"/>
+                <rect x="127" y="260" width="25" height="35" fill="#f39c12" rx="2"/>
+                <rect x="157" y="260" width="23" height="35" fill="#9b59b6" rx="2"/>
+                <rect x="185" y="260" width="28" height="35" fill="#1abc9c" rx="2"/>
+                <rect x="218" y="260" width="20" height="35" fill="#e74c3c" rx="2"/>
+                <rect x="243" y="260" width="27" height="35" fill="#3498db" rx="2"/>
+                <rect x="275" y="260" width="24" height="35" fill="#2ecc71" rx="2"/>
+                <rect x="304" y="260" width="25" height="35" fill="#f39c12" rx="2"/>
+                <rect x="334" y="260" width="21" height="35" fill="#1abc9c" rx="2"/>
+                
+                <!-- Книги на третьей полке -->
+                <rect x="45" y="320" width="22" height="35" fill="#e74c3c" rx="2"/>
+                <rect x="72" y="320" width="26" height="35" fill="#f39c12" rx="2"/>
+                <rect x="103" y="320" width="23" height="35" fill="#3498db" rx="2"/>
+                <rect x="131" y="320" width="25" height="35" fill="#2ecc71" rx="2"/>
+                <rect x="161" y="320" width="24" height="35" fill="#9b59b6" rx="2"/>
+                <rect x="190" y="320" width="27" height="35" fill="#1abc9c" rx="2"/>
+                <rect x="222" y="320" width="21" height="35" fill="#e74c3c" rx="2"/>
+                <rect x="248" y="320" width="25" height="35" fill="#f39c12" rx="2"/>
+                <rect x="278" y="320" width="26" height="35" fill="#3498db" rx="2"/>
+                <rect x="309" y="320" width="22" height="35" fill="#2ecc71" rx="2"/>
+                <rect x="336" y="320" width="24" height="35" fill="#9b59b6" rx="2"/>
+                
+                <!-- Книги на четвёртой полке -->
+                <rect x="40" y="380" width="25" height="35" fill="#3498db" rx="2"/>
+                <rect x="70" y="380" width="23" height="35" fill="#2ecc71" rx="2"/>
+                <rect x="98" y="380" width="27" height="35" fill="#e74c3c" rx="2"/>
+                <rect x="130" y="380" width="24" height="35" fill="#f39c12" rx="2"/>
+                <rect x="159" y="380" width="26" height="35" fill="#9b59b6" rx="2"/>
+                <rect x="190" y="380" width="22" height="35" fill="#1abc9c" rx="2"/>
+                <rect x="217" y="380" width="25" height="35" fill="#e74c3c" rx="2"/>
+                <rect x="247" y="380" width="24" height="35" fill="#3498db" rx="2"/>
+                <rect x="276" y="380" width="26" height="35" fill="#2ecc71" rx="2"/>
+                <rect x="307" y="380" width="23" height="35" fill="#f39c12" rx="2"/>
+                <rect x="335" y="380" width="20" height="35" fill="#1abc9c" rx="2"/>
+                
+                <!-- Девочка в белой одежде слева -->
+                <circle cx="90" cy="120" r="18" fill="#f5d5b8"/>
+                <circle cx="90" cy="100" r="16" fill="#f5d5b8"/>
+                <rect x="75" y="125" width="30" height="35" fill="white" rx="3"/>
+                <rect x="70" y="150" width="10" height="28" fill="#f5d5b8"/>
+                <rect x="85" y="150" width="10" height="28" fill="#f5d5b8"/>
+                <rect x="75" y="160" width="7" height="25" fill="#f5d5b8"/>
+                <rect x="88" y="160" width="7" height="25" fill="#f5d5b8"/>
+                
+                <!-- Мальчик в белой одежде справа -->
+                <circle cx="310" cy="115" r="18" fill="#e8b8a0"/>
+                <circle cx="310" cy="95" r="16" fill="#e8b8a0"/>
+                <rect x="295" y="130" width="30" height="33" fill="white" rx="3"/>
+                <rect x="290" y="152" width="10" height="26" fill="#e8b8a0"/>
+                <rect x="305" y="152" width="10" height="26" fill="#e8b8a0"/>
+                <rect x="295" y="162" width="7" height="24" fill="#e8b8a0"/>
+                <rect x="308" y="162" width="7" height="24" fill="#e8b8a0"/>
+                
+                <!-- Украшение - звёзды -->
+                <circle cx="150" cy="40" r="3" fill="#00a878" opacity="0.6"/>
+                <circle cx="200" cy="35" r="2.5" fill="#00a878" opacity="0.6"/>
+                <circle cx="250" cy="45" r="3" fill="#00a878" opacity="0.6"/>
+                <circle cx="100" cy="50" r="2" fill="#00a878" opacity="0.6"/>
+                <circle cx="320" cy="55" r="2.5" fill="#00a878" opacity="0.6"/>
+            </svg>
+        </div>
 
     </div>
 
